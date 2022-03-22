@@ -8,12 +8,12 @@ namespace ReverseDate
         {
             string personFirstName = "Иван Андреевич";
             string personSecondName = "Наталья Александровна";
-            string proxyVariable;
+            string template;
 
             Console.WriteLine("Сведения до замены:\n personFirstName - {0},\n personSecondName - {1}", personFirstName, personSecondName);
-            proxyVariable = personFirstName;
+            template = personFirstName;
             personFirstName = personSecondName;
-            personSecondName = proxyVariable;
+            personSecondName = template;
             Console.WriteLine("Сведения после замены:\n personFirstName - {0},\n personSecondName - {1}", personFirstName, personSecondName);
             Console.ReadKey();
         }
